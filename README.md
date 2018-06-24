@@ -1,16 +1,13 @@
 # Data-Structures
 
-
-
-
 ## ArrayStack
 
 This app example can be found in the ```testStack``` directory
 
-__Stack Data Structure__
+Description: This is an stack data structure, wich uses an array to hold the stack's data.
+
+__Note:__
 
 _Stacks are used inside programming languages to keep track of
 the order that methods, or functions, are called._
 
-Description: This is an example stack data structure, using a array to hold the information that
-the stack should contain.
