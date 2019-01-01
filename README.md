@@ -4,7 +4,7 @@
 
 This app example can be found in the ```testStack``` directory
 
-Description: This is an stack data structure, wich uses an array to hold the stack's data.
+Description: This is an stack data structure, which uses an array to hold the stack's data.
 
 __Note:__
 
