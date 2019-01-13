@@ -26,10 +26,10 @@ public ArrayStack (int newSize) {
 //  Controls the process of adding a new String element to the stack.
 public void add (String newElement) {
 	// Adds element to the stack.
-	if (end < stack.length) {
-   	 stack[end] = newElement;
-     System.out.println("The element " + stack[end] + " has been added to the array stack implementation. ");
-     end++;
+  if (end < stack.length) {
+      stack[end] = newElement;
+      System.out.println("The element " + stack[end] + " has been added to the array stack implementation. ");
+      end++;
   } else {
    //  Prints error.
      System.out.print("Error adding element.");
@@ -39,18 +39,18 @@ public void add (String newElement) {
 public void remove () {
    //  Removes the value of the first element.
    if (end == 0 && !(stack[end] == null)) {
- 		  element = stack[end];
-      System.out.println("The element " + element + " has been deleted from the array stack implementation. ");
-      stack[end] = null;
+       element = stack[end];
+       System.out.println("The element " + element + " has been deleted from the array stack implementation. ");
+       stack[end] = null;
     } else if (end > 0) {
-    //  Removes the value at the "end" by decrementing to a filled index.
-      end--;
-      element = stack[end];
-      System.out.println("The element " + element + " has been deleted from the array stack implementation. ");
-      stack[end] = null;
+         //  Removes the value at the "end" by decrementing to a filled index.
+        end--;
+        element = stack[end];
+        System.out.println("The element " + element + " has been deleted from the array stack implementation. ");
+        stack[end] = null;
      } else {
-     //  Prints Error.
-       System.out.print("Error removing element.");
+        //  Prints Error.
+        System.out.print("Error removing element.");
      }
 }
 	//  Prints the stack's contents.
@@ -58,11 +58,9 @@ public void remove () {
 
      String holdArray = "[Bottom] (";
      for (String elem: stack) {
-
-    	 	if(elem != null) {
-    	 		holdArray += " " + elem + " ";
-    	 	}
-
+    	 if(elem != null) {
+    	     holdArray += " " + elem + " ";
+    	 }
      }
      return holdArray + ") [Top]";
    }
